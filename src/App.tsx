@@ -5,6 +5,7 @@ import { Category } from "./types/Category";
 import { categories } from "./data/categories";
 import { items } from "./data/items";
 import { getCurretMonth, filterListByMonth } from "./helpers/dateFilter";
+import { TableArea } from "./components/TableArea";
 
 const App = () => {
   const [list, setlist] = useState(items);
@@ -27,6 +28,7 @@ const App = () => {
         {/* Área de inserção */}
 
         {/* Tabela de items */}
+        <TableArea list={filteredList}/>
 
       </C.Body>
     </C.Container>
