@@ -11,5 +11,11 @@ export const Category = styled.div<{ color: string }>`
     padding: 5px 10px;
     border-radius: 5px;
     color: #FFF;
+    font-weight: bold;
     background-color: ${props => props.color};
+`;
+
+export const Value = styled.div`
+    color: ${props => props.color};
+    font-weight: bold;
 `;
